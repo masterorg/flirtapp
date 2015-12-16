@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="rs.edu.ict.flirtapp.FragmentProfile">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <!--Pokupi sa servera ili baze sliku-->
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_user" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollViewProfileDetails"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profileDetailsTitle"
+                android:textSize="25sp"
+                android:textColor="@color/primaryColor"
+                android:id="@+id/profileDetailsTitle"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonsLayoutProfileDetails"
+                android:layout_below="@+id/profileDetailsTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/addFriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add as Friend"/>
+
+
+
+                </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="20sp"
+                android:id="@+id/usernameLabel"
+                android:layout_below="@+id/buttonsLayoutProfileDetails"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Pokupi"
+                android:id="@+id/usersUsername"
+                android:layout_alignTop="@+id/usernameLabel"
+                android:layout_toRightOf="@+id/usernameLabel"
+                android:layout_toEndOf="@+id/usernameLabel"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age"
+                android:textSize="20sp"
+                android:id="@+id/ageLabel"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/usernameLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pokupi"
+                android:textSize="20sp"
+                android:id="@+id/usersAge"
+                android:layout_alignTop="@+id/ageLabel"
+                android:layout_toRightOf="@+id/ageLabel"
+                android:layout_toEndOf="@+id/ageLabel"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="20sp"
+                android:id="@+id/friendsLabel"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/ageLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pokupi"
+                android:textSize="20sp"
+                android:id="@+id/userEmail"
+                android:layout_alignTop="@+id/friendsLabel"
+                android:layout_toRightOf="@+id/friendsLabel"
+                android:layout_toEndOf="@+id/friendsLabel"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textSize="20sp"
+                android:id="@+id/popularityLabel"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/friendsLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pokupi"
+                android:textSize="20sp"
+                android:id="@+id/usersGender"
+                android:layout_alignTop="@+id/popularityLabel"
+                android:layout_toRightOf="@+id/popularityLabel"
+                android:layout_toEndOf="@+id/popularityLabel"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

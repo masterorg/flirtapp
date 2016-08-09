@@ -1,2 +1,2 @@
 # flirtapp
-android dating app
+is an android dating app developed in java. 
